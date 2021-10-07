@@ -2,3 +2,25 @@ Hey  found a aesome website project euler which is helping me to think mathemati
 
 But yeah i need to find a optimized way for this i found brute force approach
 
+public class Main
+{
+	public static void main(String[] args) {
+	    int k=0,l=0,n=0z=0;
+		for(int i=1;i<1000;i++){
+		    if(i%3==0){
+		        if(i%5==0){
+		            z=z+i;
+		        }
+		        k=k+i;
+		    }
+		}
+		for(int j=1;j<1000;j++){
+		    if(j%5==0){
+		       l=l+j;
+		    }
+		}
+		
+		n=l+k-z;
+		System.out.println(n);
+	}
+}
